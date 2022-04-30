@@ -1,0 +1,497 @@
+@import "./fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: sticky;
+  top: -80px;
+  left: 0;
+  z-index: 99;
+}
+
+.header-top {
+  font-family: "Com-Reg";
+  background: linear-gradient(
+    90.09deg,
+    #3800af 0%,
+    #bf7204 97.52%,
+    #c27500 100%,
+    #c27500 100%
+  );
+  height: 80px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.header-top i {
+  font-size: 40px;
+}
+
+/* navbar start */
+
+body {
+  background: #040d1f;
+  color: white;
+}
+
+.container {
+  max-width: 1176px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.navbar {
+  height: 100px;
+  background: #010305cc;
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Com-Bold";
+  font-size: 18px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  font-family: "Mont-Reg";
+  font-size: 14px;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #ed8e00;
+}
+
+.nav-link::after {
+  content: "";
+  width: 120%;
+  height: 2px;
+  background-color: #ed8e00;
+  position: absolute;
+  left: -10%;
+  bottom: -40px;
+  transform: scale(0);
+  transition: 400ms;
+}
+
+.nav-link:hover::after {
+  transform: scale(1);
+}
+
+/* intro start */
+
+.intro {
+  background-image: url("../img/intro-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 640px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.intro::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #070f19bf;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.intro-info {
+  width: 600px;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 78px;
+  font-family: "Mont-Bold";
+}
+
+.intro-text {
+  font-family: "Mont-Reg";
+  font-size: 16px;
+  line-height: 150%;
+  text-align: justify;
+  color: #c8c8c8;
+  margin: 25px 0 50px;
+}
+
+.btn {
+  width: 166px;
+  height: 45px;
+  background: #f18128;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: "Robot-Med";
+  font-size: 14px;
+}
+
+.btn.btn-2 {
+  background: #040d1f;
+  color: white;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* FIlms start */
+
+.films {
+  padding: 60px 0 71px;
+}
+
+.title {
+  font-family: "Com-Reg";
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #f18128;
+  margin-bottom: 60px;
+}
+
+.title span {
+  position: relative;
+}
+
+.title span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #f18128;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: 400ms;
+}
+
+.title span:hover::after {
+  transform: scaleX(1);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  height: 380px;
+  width: 264px;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.card::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(241, 129, 40, 0.35) 0%,
+    rgba(0, 0, 0, 0.71) 51.04%,
+    rgba(7, 15, 25, 0.8) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card i {
+  font-size: 48px;
+  margin-top: 56px;
+  transform: translateY(-150px) rotate(360deg);
+  transition: 1000ms;
+}
+
+.card .time {
+  height: 25px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffffff;
+  border-radius: 9px;
+  margin: 13px 0;
+  font-family: "Mont-Reg";
+  font-size: 14px;
+  transform: translateX(-200px);
+  transition: 1000ms;
+}
+
+.card-title {
+  font-family: "Com-Reg";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  margin-bottom: 13px;
+  transform: translateX(250px);
+  transition: 1000ms;
+}
+
+.card-text {
+  font-family: "Robot-Med";
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 21px;
+  transform: translateY(200px);
+  transition: 1000ms;
+}
+
+.card:hover i,
+.card:hover .time,
+.card:hover .card-title,
+.card:hover .card-text {
+  transform: translate(0) rotate(0deg);
+}
+
+/* Black widow start */
+
+.widow {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  overflow: hidden;
+  color: black;
+  font-family: "Robot-Med";
+  padding-top: 43px;
+}
+
+.widow::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    #def7ff 0%,
+    #f4fcff 45.64%,
+    rgba(255, 255, 255, 0) 100.72%
+  );
+  z-index: -1;
+}
+
+.widow video {
+  position: absolute;
+  right: 0;
+  top: -15%;
+  height: 130%;
+  z-index: -1;
+}
+
+.widow-text {
+  width: 558px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 50px 0 55px;
+}
+
+/* collections start */
+
+.col {
+  padding: 61px 0 60px;
+}
+
+.col-card {
+  flex-shrink: 0;
+  width: 362px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: red;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.col-card::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    270deg,
+    rgba(7, 15, 25, 0.56) 0%,
+    rgba(49, 114, 9, 0.56) 100%
+  );
+
+  z-index: -1;
+}
+.col-card i {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.cc-title {
+  font-family: "Com-Bold";
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.left-side,
+.right-side {
+  position: absolute;
+  top: 8px;
+}
+
+.left-side {
+  left: 7px;
+}
+
+.right-side {
+  right: 7px;
+}
+
+@media (max-width: 1200px) {
+  .col-box {
+    overflow-x: scroll;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px 400px;
+  gap: 30px;
+}
+
+.grid .grid {
+  column-gap: 20px;
+  grid-template-rows: 1fr 1fr;
+}
+
+.main-serie {
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  gap: 30px;
+    padding: 15px;
+}
+
+.main-serie,
+.grid-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  border-radius: 6px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-serie::before,
+.grid-card::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    95.68deg, rgba(35, 35, 35, 0.8) 0%,
+    rgba(11, 11, 11, 0.6) 100%
+  );
+  z-index: -1;
+}
+
+.main-title{
+font-family: "Com-Bold";
+font-size: 40px;
+line-height: 45px;
+}
+
+.main-text{
+  font-family: "Com-Reg";
+  line-height: 24px;
+}
+
+.grid-card{
+  gap: 20px;
+}
+
+.grid-card h3{
+  font-family: "Com-Reg";
+font-size: 24px;
+line-height: 27px;
+}
+
+.grid-card i {
+  font-size: 48px;
+}
+
+.footer{
+background: linear-gradient(90deg, #FF8C30 0%, #9F4700 100%);
+height: 80px;
+margin-top: 60px;
+display: flex;
+align-items: center;
+font-family: "Com-Bold";
+font-size: 18px;
+line-height: 20px;
+}
+
+.footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img{
+  margin-right: 50px;
+}

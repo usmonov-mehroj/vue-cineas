@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Com-Bold';
+    src: url('../fonts/Comfortaa-Bold.ttf');
+}
+@font-face {
+    font-family: 'Com-Reg';
+    src: url('../fonts/Comfortaa-Regular.ttf');
+}
+@font-face {
+    font-family: 'Mont-Bold';
+    src: url('../fonts/Montserrat-Bold.ttf');
+}
+@font-face {
+    font-family: 'Mont-Reg';
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: 'Robot-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'Robot-Med';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
